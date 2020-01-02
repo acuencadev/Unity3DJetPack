@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - ElectricObstacle
+  - BG
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - Player
   - Collectibles
   - Obstacles
-  - 
-  - 
+  - BG
+  - BGCollector
   - 
   - 
   - 
@@ -40,6 +41,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 1752132351
+    locked: 0
+  - name: Collectibles
+    uniqueID: 1802289085
+    locked: 0
+  - name: Player
+    uniqueID: 3945348313
+    locked: 0
+  - name: Obstacles
+    uniqueID: 293863811
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
