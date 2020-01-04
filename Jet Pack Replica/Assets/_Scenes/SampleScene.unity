@@ -149,7 +149,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1554372781}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &22884419
 GameObject:
@@ -186,7 +186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 266, y: 250.41406}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &22884421
@@ -380,7 +380,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 266, y: 250.41406}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &83729262
@@ -588,7 +588,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1554372781}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &235443373
 MonoBehaviour:
@@ -602,15 +602,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f11a9ea26ebb4d4c9692594870dff8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clouds:
-  - {fileID: 2607108710507605255, guid: 5b8ea7a02f0d6b64aa497a327992ff4c, type: 3}
-  - {fileID: 1298788291348191710, guid: b91999873a8b2d940a4eb1e57c0b357b, type: 3}
-  - {fileID: 5479721268428764637, guid: e70449bb5f7de8b45817f3f57753ed24, type: 3}
-  - {fileID: 8285591581293469378, guid: 716e9743a425fee49aa4cfc5b25c7628, type: 3}
-  - {fileID: 7170415781561619631, guid: a51beffccf48910439eed0ccd2426d53, type: 3}
+  cloudsPool: {fileID: 1608544796}
   parent: {fileID: 4229482}
-  minSpawnRate: 1
-  maxSpawnRate: 5.3
+  minSpawnRate: 2.5
+  maxSpawnRate: 7.5
   minSpawnY: 4.5
   maxSpawnY: -2.5
 --- !u!1 &255798576
@@ -1283,12 +1278,63 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1608544795}
   - {fileID: 235443372}
   - {fileID: 1878594892}
   - {fileID: 4229482}
   m_Father: {fileID: 1128218542}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1608544794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1608544795}
+  - component: {fileID: 1608544796}
+  m_Layer: 0
+  m_Name: CloudsPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1608544795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608544794}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1554372781}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1608544796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608544794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef5c657ec57e2141a376b3fbf02b786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolSize: 10
+  prefabs:
+  - {fileID: 2607108710507605255, guid: 5b8ea7a02f0d6b64aa497a327992ff4c, type: 3}
+  - {fileID: 1298788291348191710, guid: b91999873a8b2d940a4eb1e57c0b357b, type: 3}
+  - {fileID: 5479721268428764637, guid: e70449bb5f7de8b45817f3f57753ed24, type: 3}
+  - {fileID: 8285591581293469378, guid: 716e9743a425fee49aa4cfc5b25c7628, type: 3}
+  - {fileID: 7170415781561619631, guid: a51beffccf48910439eed0ccd2426d53, type: 3}
 --- !u!1 &1713361481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1528,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1554372781}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1878594893
 BoxCollider2D:
@@ -1614,9 +1660,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce33cf61c19edc4ca5c9e841f62a64b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundPrefab: {fileID: 8311378893140600150, guid: 9e9035d1e888951488f349cd2fd328ff,
-    type: 3}
-  parent: {fileID: 1803422353}
 --- !u!50 &1949489175
 Rigidbody2D:
   serializedVersion: 4

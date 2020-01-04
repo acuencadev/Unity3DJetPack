@@ -3,7 +3,7 @@
 public class CloudSpawner : MonoBehaviour
 {
     [SerializeField]
-    private GameObject[] clouds;
+    private SimplePrefabPool cloudsPool;
 
     [SerializeField]
     private Transform parent;
@@ -43,11 +43,13 @@ public class CloudSpawner : MonoBehaviour
         SetRandomSpawnRate();
         nextSpawnRate = Time.time + spawnRate;
 
-        int randomIndex = Random.Range(0, clouds.Length);
         float yPosition = Random.Range(minSpawnY, maxSpawnY);
         Vector3 spawnPosition = new Vector3(transform.position.x, yPosition, 0f);
 
-        Instantiate(clouds[randomIndex], spawnPosition, transform.rotation, parent);
+        if (cloudsPool.HasItemsAvailable())
+        {
+            cloudsPool.GetItem(spawnPosition, transform.rotation, parent);
+        }
     }
 
     private void SetRandomSpawnRate()

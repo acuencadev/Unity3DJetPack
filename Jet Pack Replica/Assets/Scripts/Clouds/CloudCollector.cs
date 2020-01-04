@@ -6,7 +6,7 @@ public class CloudCollector : MonoBehaviour
     {
         if (other.CompareTag("Cloud"))
         {
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
     }
 }
