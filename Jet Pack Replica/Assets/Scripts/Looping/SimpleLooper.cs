@@ -34,7 +34,7 @@ public class SimpleLooper : MonoBehaviour
 
         for (var i = 0; i < numOfInstances; i++)
         {
-            Vector3 initialPosition = new Vector3(currentX, 0f, 0f);
+            Vector3 initialPosition = new Vector3(currentX, parent.position.y, parent.position.y);
 
             GameObject newInstance = Instantiate(prefab, initialPosition, Quaternion.identity, parent);
             BoxCollider2D newInstanceCollider = newInstance.GetComponent<BoxCollider2D>();
@@ -51,6 +51,6 @@ public class SimpleLooper : MonoBehaviour
         var bg = GameObject.FindGameObjectsWithTag(matchingTag).OrderByDescending(t => t.transform.position.x).First();
         var bgCollider = bg.GetComponent<BoxCollider2D>();
 
-        go.transform.position = new Vector3(bg.transform.position.x + bgCollider.bounds.size.x, 0f, 0f);
+        go.transform.position = new Vector3(bg.transform.position.x + bgCollider.bounds.size.x, parent.position.y, parent.position.y);
     }
 }

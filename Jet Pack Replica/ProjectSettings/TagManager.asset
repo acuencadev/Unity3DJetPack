@@ -9,6 +9,7 @@ TagManager:
   - BG
   - Cloud
   - Foreground
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -28,8 +29,8 @@ TagManager:
   - CloudCollector
   - Foreground
   - ForegroundCollector
-  - 
-  - 
+  - Ground
+  - GroundCollector
   - 
   - 
   - 

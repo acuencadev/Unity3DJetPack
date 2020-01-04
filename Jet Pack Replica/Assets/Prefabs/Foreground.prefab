@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8120195138741228664}
   - component: {fileID: 8120195138741228665}
   - component: {fileID: 8120195138741228671}
+  - component: {fileID: 5489775358014274338}
   m_Layer: 16
   m_Name: Foreground
   m_TagString: Foreground
@@ -108,3 +109,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.38, y: 1.5}
   m_EdgeRadius: 0
+--- !u!114 &5489775358014274338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120195138741228666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8713a4f74f1c21d44addf5bd64032520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeed: 2
+  maxSpeed: 2
