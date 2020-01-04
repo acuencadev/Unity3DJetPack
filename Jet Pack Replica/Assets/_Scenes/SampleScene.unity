@@ -598,7 +598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 235443372}
-  - component: {fileID: 235443373}
+  - component: {fileID: 235443374}
   m_Layer: 0
   m_Name: Cloud Spawner
   m_TagString: Untagged
@@ -620,7 +620,7 @@ Transform:
   m_Father: {fileID: 1554372781}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &235443373
+--- !u!114 &235443374
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -629,10 +629,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 235443371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f11a9ea26ebb4d4c9692594870dff8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ef2a0682fdbf6d4c87e252a1c341d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cloudsPool: {fileID: 1608544796}
+  pool: {fileID: 1608544796}
   parent: {fileID: 4229482}
   minSpawnRate: 2.5
   maxSpawnRate: 7.5
@@ -1647,7 +1647,7 @@ GameObject:
   - component: {fileID: 1878594892}
   - component: {fileID: 1878594895}
   - component: {fileID: 1878594893}
-  - component: {fileID: 1878594894}
+  - component: {fileID: 1878594896}
   m_Layer: 15
   m_Name: Cloud Collector
   m_TagString: Untagged
@@ -1695,18 +1695,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 12}
   m_EdgeRadius: 0
---- !u!114 &1878594894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878594891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20f17c54b2b451a4cbf3ef869c77460c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1878594895
 Rigidbody2D:
   serializedVersion: 4
@@ -1728,6 +1716,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1878594896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878594891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2646e84ed09e08a478ccaaa3da4969bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matchingTag: Cloud
 --- !u!1 &1949489171
 GameObject:
   m_ObjectHideFlags: 0

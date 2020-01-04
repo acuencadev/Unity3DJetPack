@@ -2,7 +2,6 @@
 using System.Linq;
 using UnityEngine;
 
-[System.Serializable]
 public class SimplePrefabPool : MonoBehaviour
 {
     [SerializeField]
@@ -45,7 +44,7 @@ public class SimplePrefabPool : MonoBehaviour
     private GameObject InstantiateNewItem(Vector3 position, Quaternion rotation, Transform parent)
     {
         int randomIndex = Random.Range(0, prefabs.Length);
-        GameObject newInstance = GameObject.Instantiate(prefabs[randomIndex], position, rotation, parent);
+        GameObject newInstance = Instantiate(prefabs[randomIndex], position, rotation, parent);
 
         instances.Add(newInstance);
 

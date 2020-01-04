@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2607108710507605249}
   - component: {fileID: 2607108710507605254}
   - component: {fileID: -2794066786722814951}
-  - component: {fileID: 565711099}
+  - component: {fileID: 4232395845438163103}
   m_Layer: 14
   m_Name: Cloud 1
   m_TagString: Cloud
@@ -117,7 +117,7 @@ PolygonCollider2D:
       - {x: 0.75, y: -0.14}
       - {x: 0.75, y: -0.089999996}
       - {x: 0.61, y: -0.049999997}
---- !u!114 &565711099
+--- !u!114 &4232395845438163103
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2607108710507605255}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8053fbaf55193224f9f1f506d4c978fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 8713a4f74f1c21d44addf5bd64032520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   minSpeed: 0.5
