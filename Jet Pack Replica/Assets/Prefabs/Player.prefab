@@ -122,7 +122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9182840465321184426
 Transform:
   m_ObjectHideFlags: 0
@@ -323,3 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6f0ef0d0e491c458813b40bb7658de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  compareTags:
+  - Obstacle
+  - DeathZone
+  - Ground
