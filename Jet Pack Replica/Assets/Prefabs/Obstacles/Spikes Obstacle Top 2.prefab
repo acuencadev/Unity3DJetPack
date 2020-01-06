@@ -30,7 +30,7 @@ PrefabInstance:
     - target: {fileID: 7719937834870708380, guid: 9ba9bcc925872da418e790b980e97dc4,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7719937834870708380, guid: 9ba9bcc925872da418e790b980e97dc4,
         type: 3}
@@ -45,7 +45,7 @@ PrefabInstance:
     - target: {fileID: 7719937834870708380, guid: 9ba9bcc925872da418e790b980e97dc4,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7719937834870708380, guid: 9ba9bcc925872da418e790b980e97dc4,
         type: 3}
@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 7719937834870708380, guid: 9ba9bcc925872da418e790b980e97dc4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7719937834870708380, guid: 9ba9bcc925872da418e790b980e97dc4,
         type: 3}
@@ -73,6 +73,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 258131462611260955, guid: 94febddd58a3f9d4dbf94fa8dfecc2e7,
         type: 3}
+    - target: {fileID: 7719937834870708381, guid: 9ba9bcc925872da418e790b980e97dc4,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7719937834870708383, guid: 9ba9bcc925872da418e790b980e97dc4,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
