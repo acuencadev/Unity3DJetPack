@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 783771683103993659}
   - component: {fileID: 783771683103993658}
   - component: {fileID: 783771683103993656}
-  - component: {fileID: 783771683103993657}
   - component: {fileID: 783771683103993654}
   m_Layer: 11
   m_Name: Electric Obstacle
-  m_TagString: ElectricObstacle
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 293863811
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf1412a331c3fef47b56e225f3d117c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -110,18 +109,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.46, y: 0.28}
   m_EdgeRadius: 0
---- !u!114 &783771683103993657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783771683103993661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c72b35b8bff895f4793d9589494c1afb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &783771683103993654
 Animator:
   serializedVersion: 3
