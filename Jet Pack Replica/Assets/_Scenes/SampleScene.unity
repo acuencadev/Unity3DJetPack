@@ -1533,7 +1533,7 @@ GameObject:
   - component: {fileID: 1156929403}
   - component: {fileID: 1156929402}
   - component: {fileID: 1156929401}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Backgrounds Looper
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -1709,7 +1709,7 @@ GameObject:
   - component: {fileID: 1409056401}
   - component: {fileID: 1409056400}
   - component: {fileID: 1409056399}
-  m_Layer: 19
+  m_Layer: 12
   m_Name: Ground Looper
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -1938,7 +1938,7 @@ GameObject:
   - component: {fileID: 1696401759}
   - component: {fileID: 1696401758}
   - component: {fileID: 1696401757}
-  m_Layer: 20
+  m_Layer: 12
   m_Name: Obstacles Collector
   m_TagString: Obstacle
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -2192,7 +2192,7 @@ GameObject:
   - component: {fileID: 1878594895}
   - component: {fileID: 1878594893}
   - component: {fileID: 1878594896}
-  m_Layer: 15
+  m_Layer: 12
   m_Name: Cloud Collector
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -2361,7 +2361,7 @@ GameObject:
   - component: {fileID: 2127522655}
   - component: {fileID: 2127522654}
   - component: {fileID: 2127522653}
-  m_Layer: 17
+  m_Layer: 12
   m_Name: Foreground Looper
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}

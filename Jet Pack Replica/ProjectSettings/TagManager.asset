@@ -22,17 +22,17 @@ TagManager:
   - 
   - Death Zone
   - Player
-  - Collectibles
+  - PickUps
   - Obstacles
-  - BGs
-  - BGCollector
-  - Clouds
-  - CloudCollector
-  - Foreground
-  - ForegroundCollector
-  - Ground
-  - GroundCollector
-  - ObstacleCollector
+  - Collector
+  - Collectible
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

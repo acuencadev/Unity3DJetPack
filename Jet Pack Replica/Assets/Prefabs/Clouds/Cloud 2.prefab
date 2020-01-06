@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1298788291348191709}
   - component: {fileID: -2923323009588766835}
   - component: {fileID: 6936307569064865028}
-  m_Layer: 14
+  m_Layer: 13
   m_Name: Cloud 2
   m_TagString: Cloud
   m_Icon: {fileID: 0}
