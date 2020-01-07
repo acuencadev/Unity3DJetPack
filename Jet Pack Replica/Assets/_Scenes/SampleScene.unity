@@ -425,8 +425,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pool: {fileID: 1277950704}
   parent: {fileID: 344382596}
-  minSpawnRate: 3
-  maxSpawnRate: 7
+  minSpawnRate: 8
+  maxSpawnRate: 10
   minSpawnY: -2.7
   maxSpawnY: 2.7
 --- !u!1 &83729260
@@ -1696,7 +1696,6 @@ MonoBehaviour:
   prefabs:
   - {fileID: 783771683103993661, guid: f4ef03bdc6c68194ab7d9e0744558eab, type: 3}
   - {fileID: 6745844803245738054, guid: 4a83c515b4273c44fb0f07a5bd673bfc, type: 3}
-  - {fileID: 296732347}
 --- !u!1 &1409056397
 GameObject:
   m_ObjectHideFlags: 0
