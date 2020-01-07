@@ -1,13 +1,14 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
 public class SimpleCollector : MonoBehaviour
 {
     [SerializeField]
-    private string matchingTag;
+    private string[] matchingTags;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag(matchingTag))
+        if (matchingTags.Contains(other.tag))
         {
             other.gameObject.SetActive(false);
         }
