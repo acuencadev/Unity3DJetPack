@@ -9,11 +9,11 @@ public class SimpleSpawner : MonoBehaviour
     private Transform parent;
 
     [SerializeField]
-    [Range(0f, 10f)]
+    [Range(0f, 100f)]
     private float minSpawnRate;
 
     [SerializeField]
-    [Range(0f, 10f)]
+    [Range(0f, 100f)]
     private float maxSpawnRate;
 
     [SerializeField]
