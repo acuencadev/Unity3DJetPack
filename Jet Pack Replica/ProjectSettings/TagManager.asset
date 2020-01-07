@@ -14,6 +14,7 @@ TagManager:
   - BombItem
   - MagnetItem
   - ShieldItem
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Obstacles
   - Collector
   - Collectible
-  - 
+  - Enemies
   - 
   - 
   - 
