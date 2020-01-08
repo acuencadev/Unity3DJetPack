@@ -15,7 +15,7 @@ public class AttackArea : MonoBehaviour
         {
             if (enemyAttack != null)
             {
-                enemyAttack.Attack();
+                enemyAttack.StartAttack();
             }
         }
     }
