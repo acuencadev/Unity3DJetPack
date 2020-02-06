@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
@@ -10,8 +11,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (compareTags.Contains(other.tag))
         {
-            Destroy(gameObject);
-            Debug.Log("Player died when collided with a electric obstacle.");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
